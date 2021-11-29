@@ -5,40 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/bc09532312.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Inlämningsuppgift 3 - DC Quiz</h1>
-
-    <button id="colorButton">Change colormode</button>
-
+<h1>Inlämningsuppgift 3 - DC Quiz</h1>
+<button id="colorButton">Change to darkmode <i class="fas fa-moon"></i> </button>
 
 <form action="">
-    
-    <!-- <h2>Sant/falskt - 3 frågor</h2> -->
+    <h2>Sant eller falskt</h2>
     <h3>Fråga 1- Aslan är i vägen under föreläsningarna.</h3>
-    <input type="radio" name="question1" id="true1" value="true">
+    <input type="radio" name="question1" id="true1" value="true" required/>
     <label for="true1">Sant (R)</label>
     <input type="radio" name="question1" id="false1" value="false">
     <label for="false1">Falskt</label>
 
     <h3>Fråga 2 - Aslan gillar inte falukorv.</h3>
-    <input type="radio" name="question2" id="true2" value="true">
+    <input type="radio" name="question2" id="true2" value="true" required>
     <label for="true2">Sant (R)</label>
-    <input type="radio" name="question2" id="false2" value="false">
+    <input type="radio" name="question2" id="false2" value="false" >
     <label for="false2">Falskt</label>
 
     <h3>Fråga 3 - Aslan gillar blötmat.</h3>
     <input type="radio" name="question3" id="true3" value="false">
     <label for="true3">Sant</label>
-    <input type="radio" name="question3" id="false3" value="true">
+    <input type="radio" name="question3" id="false3" value="true" required>
     <label for="false3">Falskt (R)</label>
     
-    <!-- <h2>3 alternativ - 3 frågor</h2> -->
-
+    <h2>3 alternativ - 1 rätt svar</h2> 
     <h3>Fråga 4 - Vad är Aslans favoritunderhållning?</h3>
     <input type="radio" name="question4" id="option1" value="false">
     <label for="option1">Klippa klorna</label>
-    <input type="radio" name="question4" id="option2" value="true">
+    <input type="radio" name="question4" id="option2" value="true" required>
     <label for="option2">Springa efter godis (R)</label>
     <input type="radio" name="question4" id="option3" value="false">
     <label for="option3">Åka bil</label>
@@ -48,46 +47,42 @@
     <label for="option4">1 år</label>
     <input type="radio" name="question5" id="option5" value="false">
     <label for="option5">4 år</label>
-    <input type="radio" name="question5" id="option6" value="true">
+    <input type="radio" name="question5" id="option6" value="true" required>
     <label for="option6">2 1/2 år (R)</label>
 
-    <h3>Fråga 6 - </h3>
-    <input type="radio" name="question6" id="option7" value="true">
-    <label for="option7">Rätt</label>
+    <h3>Fråga 6 - Var tycker Aslan bäst om att bli kliad?</h3>
+    <input type="radio" name="question6" id="option7" value="true" required>
+    <label for="option7">Längst bak på ryggen (R)</label>
     <input type="radio" name="question6" id="option8" value="false">
-    <label for="option8">Fel</label>
+    <label for="option8">På magen</label>
     <input type="radio" name="question6" id="option9" value="false">
-    <label for="option9">Fel</label>
-    
-    <!-- <h2>1 fråga - flera rätt svar i samma</h2> -->
+    <label for="option9">På insidan av låren</label>
 
-    <h3>Fråga 7 - Var sover Aslan helst? (Flera val)</h3>
+    <h2>1 fråga - 3 rätta svar</h2>
+    <h3>Fråga 7 - Var sover Aslan helst?</h3>
     <div>
-        <input type="checkbox" name="alt1" id="check1"/>
+        <input type="checkbox" name="alt1" id="check1" value="true1"/>
         <label for="check1">På skrivbordet under föreläsning (R)</label>
-        <input type="checkbox" name="alt4" id="check4"/>
-        <label for="check4">På köksbordet</label>
         <input type="checkbox" name="alt2" id="check2"/>
-        <label for="check2">På fönsterbrädan</label>
+        <label for="check2">På köksbordet</label>
+        <input type="checkbox" name="alt3" id="check3"/>
+        <label for="check3">På fönsterbrädan</label>
     </div>
     <div>
-        <input type="checkbox" name="alt3" id="check3"/>
-        <label for="check3">Under sängen (R)</label>
-        <input type="checkbox" name="alt5" id="check5"/>
+        <input type="checkbox" name="alt4" id="check4" value="true2"/>
+        <label for="check4">Under sängen (R)</label>
+        <input type="checkbox" name="alt5" id="check5" value="true3"/>
         <label for="check5">Högst upp i katträdet (R) </label>
         <input type="checkbox" name="alt6" id="check6"/>
         <label for="check6">I husses/mattes knä</label>
     </div>
-     
 </form>
-    
+
 <div>
     <br> <button id="result">Rätta quizet!</button>
 </div> 
 
-<h3 id="score"></h3>
-
-    
+<h1 id="score"></h1>
 
     <script src="main.js"></script>
 </body>
