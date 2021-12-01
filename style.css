@@ -1,0 +1,21 @@
+ body {
+    text-align: center;
+} 
+
+#score {
+    text-align: center; 
+    margin-top: 3rem;
+}
+#colorButton {
+    border: none;
+    background-color: #c8a9dd;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#colorButton:hover{
+    background-color:#a889bd;
+}

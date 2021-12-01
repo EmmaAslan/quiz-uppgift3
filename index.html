@@ -13,16 +13,17 @@
 <h1>Inlämningsuppgift 3 - DC Quiz</h1>
 <button id="colorButton">Change to darkmode <i class="fas fa-moon"></i> </button>
 
+<div id="frameOne" hidden>
 <form action="">
-    <h2>Sant eller falskt</h2>
+    <!-- Sant eller falskt -->
     <h3>Fråga 1- Aslan är i vägen under föreläsningarna.</h3>
-    <input type="radio" name="question1" id="true1" value="true" required/>
+    <input type="radio" name="question1" id="true1" value="true"/>
     <label for="true1">Sant (R)</label>
     <input type="radio" name="question1" id="false1" value="false">
     <label for="false1">Falskt</label>
 
     <h3>Fråga 2 - Aslan gillar inte falukorv.</h3>
-    <input type="radio" name="question2" id="true2" value="true" required>
+    <input type="radio" name="question2" id="true2" value="true">
     <label for="true2">Sant (R)</label>
     <input type="radio" name="question2" id="false2" value="false" >
     <label for="false2">Falskt</label>
@@ -30,14 +31,14 @@
     <h3>Fråga 3 - Aslan gillar blötmat.</h3>
     <input type="radio" name="question3" id="true3" value="false">
     <label for="true3">Sant</label>
-    <input type="radio" name="question3" id="false3" value="true" required>
+    <input type="radio" name="question3" id="false3" value="true">
     <label for="false3">Falskt (R)</label>
     
-    <h2>3 alternativ - 1 rätt svar</h2> 
+    <!-- 3 alternativ - 1 rätt svar  -->
     <h3>Fråga 4 - Vad är Aslans favoritunderhållning?</h3>
     <input type="radio" name="question4" id="option1" value="false">
     <label for="option1">Klippa klorna</label>
-    <input type="radio" name="question4" id="option2" value="true" required>
+    <input type="radio" name="question4" id="option2" value="true">
     <label for="option2">Springa efter godis (R)</label>
     <input type="radio" name="question4" id="option3" value="false">
     <label for="option3">Åka bil</label>
@@ -47,18 +48,18 @@
     <label for="option4">1 år</label>
     <input type="radio" name="question5" id="option5" value="false">
     <label for="option5">4 år</label>
-    <input type="radio" name="question5" id="option6" value="true" required>
+    <input type="radio" name="question5" id="option6" value="true">
     <label for="option6">2 1/2 år (R)</label>
 
     <h3>Fråga 6 - Var tycker Aslan bäst om att bli kliad?</h3>
-    <input type="radio" name="question6" id="option7" value="true" required>
+    <input type="radio" name="question6" id="option7" value="true">
     <label for="option7">Längst bak på ryggen (R)</label>
     <input type="radio" name="question6" id="option8" value="false">
     <label for="option8">På magen</label>
     <input type="radio" name="question6" id="option9" value="false">
     <label for="option9">På insidan av låren</label>
 
-    <h2>1 fråga - 3 rätta svar</h2>
+    <!-- 1 fråga - 3 rätta svar -->
     <h3>Fråga 7 - Var sover Aslan helst?</h3>
     <div>
         <input type="checkbox" name="alt1" id="check1" value="true1"/>
@@ -76,14 +77,18 @@
         <input type="checkbox" name="alt6" id="check6"/>
         <label for="check6">I husses/mattes knä</label>
     </div>
-</form>
+</form> 
 
 <div>
     <br> <button id="result">Rätta quizet!</button>
 </div> 
 
-<h1 id="score"></h1>
+</div> 
+<!-- End of id="frameOne" -->
 
+<div id="frameTwo" hidden> 
+    <h1 id="score"></h1>
+</div>
     <script src="main.js"></script>
 </body>
 </html>
